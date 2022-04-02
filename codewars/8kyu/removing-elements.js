@@ -9,5 +9,5 @@
 // solution /////////////////////////////
 
 function removeEveryOther(arr) {
-  return arr.filter((elem, i) => i % 2 === 0);
+  return arr.filter((_, i) => i % 2 === 0);
 }
