@@ -117,7 +117,11 @@ body {
 }
 
 .profile-img-area {
-  width: max-content;
+  width: 25%;
+}
+
+.profile-img-area img {
+  width: 100%;
 }
 
 .stats-area {
@@ -134,6 +138,9 @@ body {
   align-items: center;
 }
 
+.joined-date {
+  width: 40%;
+}
 .name {
   font-weight: bold;
 }
