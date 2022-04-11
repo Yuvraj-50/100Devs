@@ -55,7 +55,7 @@ const userCompany = document.querySelector(".user-company");
 
 function renderCard(data) {
   Profileimg.src = data.avatar_url;
-  Name.textContent = data.name;
+  Name.textContent = getSocials(data, "name");
   userName.textContent = `@${data.login}`;
   userName.href = data.html_url;
   joined.textContent = `joined ${getDate(data.created_at)}`;
