@@ -192,6 +192,63 @@ body {
   color: rgb(0, 200, 255);
 }
 
+@media (max-width: 650px) {
+  .social {
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+}
+@media (max-width: 580px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social {
+    justify-content: center;
+    align-items: center;
+  }
+  .stats-area {
+    width: 100%;
+  }
+  .profile-img-area {
+    width: 80%;
+  }
+  .form {
+    gap: 1rem;
+  }
+  .bio {
+    margin-bottom: 1rem;
+  }
+  .joined-date {
+    width: 100%;
+  }
+  .user-followers-detail {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .name {
+    margin-bottom: 1rem;
+  }
+  .logo h1 {
+    font-size: 1.1rem;
+  }
+
+  .username-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .name-details {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 .hidden {
   display: none;
 }

@@ -30,8 +30,11 @@ function getUserData(user) {
   fetch(`https://api.github.com/users/${user}`)
     .then((res) => res.json())
     .then((data) => {
-      // render data
-      renderCard(data);
+      if (data.message == "Not Found") {
+        alert("user not found");
+      } else {
+        renderCard(data);
+      }
     });
 }
 
