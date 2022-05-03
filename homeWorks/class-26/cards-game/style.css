@@ -1,0 +1,9 @@
+.cards-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  background-color: red;
+  padding: 2rem;
+}
