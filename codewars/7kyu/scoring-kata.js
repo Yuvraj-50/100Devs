@@ -27,3 +27,10 @@ function scoreTest(arr, right, omit, wrong) {
   const omitAns = arr.filter((elem) => elem === 1).length;
   return correctAns * right + omitAns * omit - wrongAns * wrong;
 }
+
+// best solution
+
+function scoreTest(arr, right, omit, wrong) {
+  const grades = [right, omit, -wrong];
+  return arr.reduce((acc, c) => acc + grades[c], 0);
+}
